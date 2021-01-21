@@ -6,6 +6,8 @@ import csv, datetime, zipfile, string, sys, os, re, signal
 import xml.parsers.expat
 from xml.dom import minidom
 import pandas as pd # depends on xlrd, openpyxl
+import openpyxl as opxl
+import xlrd
 
 try:
     # python2.4
@@ -1071,7 +1073,7 @@ if __name__ == "__main__":
         options = parser.parse_args()
         # convert xls to xlsx
         if options.infile.split('.')[-1] == 'xls':
-            df = pd.read_excel(options.infile, header=None)
+            df = pd.read_excel(options.infile, header=None, engine='xlrd')
             df.to_excel(options.infile + 'x', index=False, header=False)
             options.infile += 'x'
     else:
