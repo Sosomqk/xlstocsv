@@ -5,7 +5,7 @@ with open('README.md') as readme_file:
 
 setup_args = dict(
     name='xls2csv',
-    version='1.0.0',
+    version='1.0.1',
     description='XLS to CSV converter. Complementary to xlsx2csv package',
     long_description_content_type="text/markdown",
     long_description=README,
