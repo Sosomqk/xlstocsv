@@ -7,8 +7,8 @@ import pandas as pd
 
 if (len(sys.argv) < 2):
 	print('''Invalid file path!
-			Usage: xls2csv /path/to/xls_file  # for command line output
-			Usage: xls2csv /path/to/xls_file /path/to/csv_file  # for writing in a csv file
+		Usage: xls2csv /path/to/xls_file  # for command line output
+		Usage: xls2csv /path/to/xls_file /path/to/csv_file  # for writing in a csv file
 	''')
 	sys.exit(1)
 
@@ -21,11 +21,11 @@ if (argv_len > 2): # if output file is provided
 
 for row in workbook.values:
 	if (argv_len > 2): # if output file is provided
-			writer.writerow(row)
+		writer.writerow(row)
 	else:
-			row2str = ','.join(str(s) for s in row)
-			row2str = re.sub(r"00\:00\:00|\s", '', row2str)
-			print(row2str)
+		row2str = ','.join(str(s) for s in row)
+		row2str = re.sub(r"00\:00\:00|\s", '', row2str)
+		print(row2str)
 
 if (argv_len > 2): # if output file is provided
     writer.close()
