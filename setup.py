@@ -4,7 +4,7 @@ with open('README.md') as readme_file:
     README = readme_file.read()
 
 setup_args = dict(
-    name='xls2csv',
+    name='xls-to-csv',
     version='1.0.0',
     description='XLS to CSV converter. Complementary to xlsx2csv package',
     long_description_content_type="text/markdown",
@@ -14,8 +14,8 @@ setup_args = dict(
     author='Miroslav Isikiyski',
     author_email='misho8520@abv.bg',
     keywords=['xls', 'csv', 'convert', 'python', 'pandas', 'xlrd'],
-    url='https://github.com/ncthuc/elastictools',
-    download_url='https://pypi.org/project/elastictools/'
+    url='https://github.com/Sosomqk/xlstocsv',
+    download_url='https://pypi.org/project/xls-to-csv/'
 )
 
 install_requires = [
