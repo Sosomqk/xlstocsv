@@ -30,5 +30,4 @@ for row in workbook.values:
 		row2str = re.sub(r"00\:00\:00|\s", '', row2str)
 		print(row2str)
 
-if (argv_len > 2): # if output file is provided
-    writer.close()
+sys.exit(0)
