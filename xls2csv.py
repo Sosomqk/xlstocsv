@@ -5,6 +5,9 @@ import re
 import sys
 import pandas as pd
 
+reload(sys)
+sys.setdefaultencoding('utf8')  # default
+
 if (len(sys.argv) < 2):
 	print('''Invalid file path!
 		Usage: xls2csv /path/to/xls_file  # for command line output
