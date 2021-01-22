@@ -14,13 +14,13 @@ setup_args = dict(
     author='Miroslav Isikiyski',
     author_email='misho8520@abv.bg',
     keywords=['xls', 'csv', 'convert', 'python', 'pandas', 'xlrd'],
-    url='https://github.com/Sosomqk/xlstocsv',
+    url='https://github.com/Sosomqk/xls-to-csv',
     download_url='https://pypi.org/project/xls-to-csv/'
 )
 
 install_requires = [
-    'elasticsearch>=6.0.0,<7.0.0',
-    'jinja2'
+    'pandas',
+    'xlrd'
 ]
 
 if __name__ == '__main__':
