@@ -1,3 +1,3 @@
 build/*
 dist/*
-xls2csv.egg-info/*
+xls_to_csv.egg-info/*
