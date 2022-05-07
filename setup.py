@@ -20,7 +20,7 @@ setup_args = dict(
 
 install_requires = [
     'pandas',
-    'xlrd'
+    'xlrd',
 ]
 
 if __name__ == '__main__':
