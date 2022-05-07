@@ -5,8 +5,9 @@ import re
 import sys
 import pandas as pd
 
-reload(sys)
-sys.setdefaultencoding('utf8')  # default
+if sys.version[0] == '2':
+	reload(sys)
+	sys.setdefaultencoding("utf-8")
 
 if (len(sys.argv) < 2):
 	print('''Invalid file path!
@@ -28,6 +29,7 @@ for row in workbook.values:
 	else:
 		row2str = ','.join(str(s) for s in row)
 		row2str = re.sub(r"00\:00\:00|\s", '', row2str)
+		row2str = row2str.rstrip('.')
 		print(row2str)
 
 sys.exit(0)
