@@ -10,4 +10,5 @@ Complementary package to xlsx2csv(https://github.com/xevo/xls2csv) - great tool,
 Dependencies: python > 2.7, pandas, xlrd
 
 Usage: `xls2csv /path/to/xls_or_xlsx_file/` # spits CSV lines on CLI
+
 Usage: `xls2csv /path/to/xls_or_xlsx_file/ /path/to/file.csv` # writes in a CSV file
