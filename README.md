@@ -1,3 +1,5 @@
+=== Removed from PyPi ===
+
 XLS to CSV converter.
 Very fast, extremely light and easy to use.
 
